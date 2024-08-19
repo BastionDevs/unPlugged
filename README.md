@@ -1,4 +1,5 @@
 # DMALib
+![Bastion GSLP License](https://img.shields.io/badge/Bastion-GSLP%20v1.35-blue) ![Free PALESTINE](https://img.shields.io/badge/Free-PALESTINE-darkgreen)
 
 ## Description
 DMALib provides solutions to bypass or remove restrictions on devices, particularly for Windows and iOS. Our solutions include Blocksi Bypass for Windows, Mobile Guardian Removal for iPads, and Full DMA Bypass for select Windows devices with the Parent Option enabled. We aim to assist users in reclaiming full control over their purchased devices.
