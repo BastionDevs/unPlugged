@@ -10,8 +10,8 @@ DMALib provides solutions to bypass or remove restrictions on devices, particula
 - **Enable Administrator Account**: Available for most Windows devices with Parent DMA Option (A/B/C) selected.
 
 ## Supported Devices
-* Windows devices
- * Windows 10/11
+- Windows devices
+  - Windows 10/11
 
 *Support for ChromeOS and MacOS devices is under consideration. Join our Discord server to suggest solutions.*
 
