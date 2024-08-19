@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>DMALib</title>
+        <style>
+            .button{
+                border: black;
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                padding: 15px 32px;
+            }
+            .big-header{
+                font-size: 40px;
+                font-weight: bold;
+                max-width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #contri-headers{
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header><h1>Credits</h1></header>
+        <div class="big-header">Special Thanks To:</div>
+        <br><br>
+        <h4 id="contri-headers">Github Contributors:</h4>
+        <ul>
+            <li>@ndrwcube</li>
+            <li>@mxtw11</li>
+            <li>@whalesovercats</li>
+        </ul>
+        <button class="button" onclick="goHome()">Home</button>
+        <script>
+            function goHome(){
+                window.location.href = 'https://bastiondevs.github.io/DMALib/';
+            }
+        </script>
+    </body>
+</html>
