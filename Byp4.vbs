@@ -1,13 +1,3 @@
-# Solutions
-- [**Blocksi Enterprise Edition Bypass**](#blocksi-enterprise-edition-bypass)
-- **Mobile Guardian Removal**: Reliable and proven solution for iPads.
-- **Local Admin Enabling**: Available for most Windows devices with Parent DMA Option (A/B/C) selected.
-
-### Blocksi Enterprise Edition Bypass
-This bypass works by disabling all Chrome extensions to stop Blocksi from loading.  
-Since MOE has made a script to stop regular Chrome from starting with extensions, the script now makes a copy of the Chrome Program Files to circumvent this.   
-<a href="Byp4.vs" download><p>Download Byp4.vbs</p></a>
-``` vbnet
 Set objShell = CreateObject("WScript.Shell")
 ' Get the user's profile directory
 userProfile = objShell.ExpandEnvironmentStrings("%USERPROFILE%")
@@ -44,4 +34,3 @@ objShell.Run "taskkill /f /im chrome.exe", 0, True
 MsgBox "All Chrome tabs has been closed"
 
 MsgBox "A Chrome shortcut has been created in your Desktop. Launch the new shortcut for the Blocksi Enterprise Edition bypass"
-```
