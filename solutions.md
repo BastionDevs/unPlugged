@@ -1,6 +1,3 @@
-# DMALib
-![Bastion GSLP License](https://img.shields.io/badge/Bastion-GSLP%20v1.35-blue) ![Free PALESTINE](https://img.shields.io/badge/Free-PALESTINE-darkgreen)
-
 ## Solutions
 - [**Blocksi Enterprise Edition Bypass**](#blocksi-enterprise-edition-bypass)
 - **Mobile Guardian Removal**: Reliable and proven solution for iPads.
