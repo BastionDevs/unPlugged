@@ -6,7 +6,7 @@
 ### Blocksi Enterprise Edition Bypass
 This bypass works by disabling all Chrome extensions to stop Blocksi from loading.  
 Since MOE has made a script to stop regular Chrome from starting with extensions, the script now makes a copy of the Chrome Program Files to circumvent this.   
-<a href="Byp4.vs" download><p>Download Byp4.vbs</p></a>
+<a href="Byp4.vbs" download><p>Download Byp4.vbs</p></a>
 ``` vbnet
 Set objShell = CreateObject("WScript.Shell")
 ' Get the user's profile directory
