@@ -2,18 +2,18 @@
 ![Bastion GSLP License](https://img.shields.io/badge/Bastion-GSLP%20v1.35-blue) ![Free PALESTINE](https://img.shields.io/badge/Free-PALESTINE-darkgreen)
 
 ## Description
-DMALib provides solutions to bypass or remove restrictions on devices, particularly for Windows and iOS. Our solutions include Blocksi Bypass for Windows, Mobile Guardian Removal for iPads, and Full DMA Bypass for select Windows devices with the Parent Option enabled. We aim to assist users in reclaiming full control over their purchased devices.
+DMALib provides solutions to bypass or remove restrictions on Windows devices. Our solutions include the Blocksi Bypass for Windows, (RIP Mobile Guardian for iPads), and Local Admin Enabling for select Windows devices with a suitable Parent DMA Option. We aim to assist users in reclaiming full control over their purchased devices.
 
 ## Features
 - **Blocksi Bypass**: Reliable and proven solution for Windows devices.
 - **Mobile Guardian Removal**: Reliable and proven solution for iPads.
-- **Enable Administrator Account**: Available for most Windows devices with Parent DMA Option (A/B/C) selected.
+- **Local Admin Enabling**: Available for most Windows devices with Parent DMA Option (A/B/C) selected.
 
 ## Supported Devices
 - Windows devices
   - Windows 10/11
 
-*Support for ChromeOS and MacOS devices is under consideration. Join our Discord server to suggest solutions.*
+*Support for ChromeOS and MacOS devices is being considered. Join our Discord server to suggest solutions.*
 
 ## Installation and Usage
 For detailed installation and usage instructions, please visit our [official website](https://bastiondevs.github.io/DMALib).
