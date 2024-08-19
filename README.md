@@ -27,7 +27,7 @@ For detailed installation and usage instructions, please visit our [official web
 
 ## License
 This project is licensed under the Bastion General Software Licensing Policy.  
-See the [LICENSE file](LICENSE.md) for details.
+See the [LICENSE file](LICENSE) for details.
 
 ## Contact
 Join the official DMALib Discord server for support and updates: [DMALib Discord](https://discord.gg/KpUT8FwGvb)
