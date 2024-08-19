@@ -7,7 +7,6 @@
 This bypass works by disabling all Chrome extensions to stop Blocksi from loading.  
 Since MOE has made a script to stop regular Chrome from starting with extensions, the script now makes a copy of the Chrome Program Files to circumvent this.   
 <code class="language-vb">
-```vbscript
 Set objShell = CreateObject("WScript.Shell")
 ' Get the user's profile directory
 userProfile = objShell.ExpandEnvironmentStrings("%USERPROFILE%")
@@ -44,5 +43,4 @@ objShell.Run "taskkill /f /im chrome.exe", 0, True
 MsgBox "All Chrome tabs has been closed"
 
 MsgBox "A Chrome shortcut has been created in your Desktop. Launch the new shortcut for the Blocksi Enterprise Edition bypass"
-```
 </code>
