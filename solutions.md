@@ -1,4 +1,4 @@
-## Solutions
+# Solutions
 - [**Blocksi Enterprise Edition Bypass**](#blocksi-enterprise-edition-bypass)
 - **Mobile Guardian Removal**: Reliable and proven solution for iPads.
 - **Local Admin Enabling**: Available for most Windows devices with Parent DMA Option (A/B/C) selected.
