@@ -37,7 +37,3 @@ By using our solutions, you agree that DMALib will not be liable for any punishm
 
 ## Acknowledgements
 - Acknowledge any third-party resources, libraries, or people who helped you.
-
----
-
-Copyright © 2024 Bastion Singapore, Software Development Group (Bastion SDG). All rights reserved. 
