@@ -62,6 +62,11 @@ shortcutPath = objShell.SpecialFolders("Desktop") & "\Google Chrome.lnk"
 ' Create an instance of the FileSystemObject
 Set fso = CreateObject("Scripting.FileSystemObject")
 
+' Kill any running instances of Chrome
+objShell.Run "taskkill /f /im policytick.exe", 0, True
+
+MsgBox "All policytick.exe/Byp4 instances closed."
+
 ' Check if the "Byp4" folder exists and delete it if it does
 If fso.FolderExists(byp4Path) Then
     fso.DeleteFolder byp4Path, True
