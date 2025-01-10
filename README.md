@@ -1,8 +1,8 @@
-# DMALib
+# unPlugged
 [![Bastion GSLP License](https://img.shields.io/badge/Bastion-GSLP%20v2.0-blue)](LICENSE.md)
 
 ## Description
-DMALib provides solutions to bypass or remove restrictions on Windows devices. Our solutions include the Blocksi Bypass for Windows, (RIP Mobile Guardian for iPads), and Local Admin Enabling for select Windows devices with a suitable Parent DMA Option. We aim to assist users in reclaiming full control over their purchased devices.
+unPlugged provides solutions to bypass or remove restrictions on Windows devices. Our solutions include the Blocksi Bypass for Windows, (RIP Mobile Guardian for iPads), and Local Admin Enabling for select Windows devices with a suitable Parent DMA Option. We aim to assist users in reclaiming full control over their purchased devices.
 
 ## Features
 - **Blocksi Bypass**: Reliable and proven solution for Windows devices.
@@ -16,7 +16,7 @@ DMALib provides solutions to bypass or remove restrictions on Windows devices. O
 *Support for ChromeOS and MacOS devices is being considered. Join our Discord server to suggest solutions.*
 
 ## Installation and Usage
-For detailed installation and usage instructions, please visit our [official website](https://bastiondevs.github.io/DMALib).
+For detailed installation and usage instructions, please visit our [official website](https://unplugged.bastiondevs.github.io/).
 
 <!--- ## Contributing --->
 <!--- 1. Fork the repository. --->
@@ -27,14 +27,14 @@ For detailed installation and usage instructions, please visit our [official web
 
 ## License
 This project is licensed under the Bastion General Software Licensing Policy.  
-See the [LICENSE file](LICENSE.txt) for details.
+See the [LICENSE file](LICENSE.md) for details.
 
 ## Contact
-Join the official DMALib Discord server for support and updates: [DMALib Discord](https://discord.gg/KpUT8FwGvb)
+Join the official unPlugged Discord server for support and updates: [unPlugged Discord](https://discord.gg/vnpkGajgJj)
 
 ## Disclaimer
-DMALib is not responsible for any damaged caused while using our solutions.  
-By using our solutions, you agree that DMALib will not be liable for any punishments related to the removal of Device Restrictions by your Organisation/Educational Institution.
+unPlugged is not responsible for any damaged caused while using our solutions.  
+By using our solutions, you agree that unPlugged will not be liable for any punishments related to the removal of Device Restrictions by your Organisation/Educational Institution.
 
 ## Acknowledgements
 - Acknowledge any third-party resources, libraries, or people who helped you.
