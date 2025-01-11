@@ -1,6 +1,5 @@
 # unPlugged
 [![Bastion GSLP License](https://img.shields.io/badge/Bastion-GSLP%20v2.0-blue)](LICENSE.md)
-![Discord](https://img.shields.io/discord/1324722556472918016)
 ![Website](https://img.shields.io/website?url=http%3A%2F%2Funplugged.bastionsg.rf.gd%2F)
 
 
