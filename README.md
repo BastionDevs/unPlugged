@@ -1,40 +1,45 @@
 # unPlugged
 [![Bastion GSLP License](https://img.shields.io/badge/Bastion-GSLP%20v2.0-blue)](LICENSE.md)
 
-## Description
-unPlugged provides solutions to bypass or remove restrictions on Windows devices. Our solutions include the Blocksi Bypass for Windows, (RIP Mobile Guardian for iPads), and Local Admin Enabling for select Windows devices with a suitable Parent DMA Option. We aim to assist users in reclaiming full control over their purchased devices.
+unPlugged is an innovative server designed to assist students in Singapore by providing essential technology support and resources. Our mission is to enhance the learning experience through seamless access to information, tools, and community engagement.
 
 ## Features
-- **Blocksi Bypass**: Reliable and proven solution for Windows devices.
-- **Mobile Guardian Removal**: Reliable and proven solution for iPads.
-- **Local Admin Enabling**: Available for most Windows devices with Parent DMA Option (A/B/C) selected.
 
-## Supported Devices
-- Windows devices
-  - Windows 10/11
+- **Technical Support:** Get help with technical issues at any time.
+- **Resource Hub:** Access a wide range of educational materials and tools tailored for students.
+- **Community Forum:** Connect with peers to share knowledge, ask questions, and collaborate on projects.
+- **PLD Jailbreaking:** Get access to limited services and notetaking application by MOE's flawed mdm service. Avaliable to Windows, ChromeOS and Ipads
 
-*Support for ChromeOS and MacOS devices is being considered. Join our Discord server to suggest solutions.*
+## Getting Started
 
-## Installation and Usage
-For detailed installation and usage instructions, please visit our [official website](https://unplugged.bastiondevs.github.io/).
+To get started with unPlugged:
 
-<!--- ## Contributing --->
-<!--- 1. Fork the repository. --->
-<!--- 2. Create your feature branch: `git checkout -b feature/feature-name`. --->
-<!--- 3. Commit your changes: `git commit -m 'Add some feature'`. --->
-<!--- 4. Push to the branch: `git push origin feature/feature-name`. --->
-<!--- 5. Open a pull request. --->
+1. **Website:** Visit our website to learn about the different solutions and tutorials.
+2. **Explore Resources:** Browse through our resource hub for guides, tutorials, and tools.
+3. **Join the Community:** Engage with other students in our discord.
 
-## License
+## Contributing
+
+We welcome contributions from the community! To contribute, either:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push to your branch.
+4. Submit a pull request for review.
+
+Or join our discord server and open a suggestion ticket!
+ 
+ ## License
 This project is licensed under the Bastion General Software Licensing Policy.  
 See the [LICENSE file](LICENSE.md) for details.
-
-## Contact
+  
+### Contact
 Join the official unPlugged Discord server for support and updates: [unPlugged Discord](https://discord.gg/vnpkGajgJj)
 
-## Disclaimer
+### Disclaimer
 unPlugged is not responsible for any damaged caused while using our solutions.  
 By using our solutions, you agree that unPlugged will not be liable for any punishments related to the removal of Device Restrictions by your Organisation/Educational Institution.
 
-## Acknowledgements
-- Acknowledge any third-party resources, libraries, or people who helped you.
+---
+
+Join us in making technology accessible for all students in Singapore!
