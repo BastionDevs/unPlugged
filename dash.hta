@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>BSG unPlugged</title>
+    <hta:application 
+        applicationname="Type the name of a program, folder, document, or internet resource, and unPlugged will open it for you"
+        border="thick"
+        borderstyle="normal"
+        caption="yes"
+        contextmenu="no"
+        maximizebutton="no"
+        minimizebutton="no"
+        showintaskbar="yes"
+        singleinstance="yes" />
+    <style>
+        body { 
+            font-family: Tahoma; 
+            padding: 20px; 
+        }
+        input[type=text] { width: 300px; }
+    </style>
+    <script type="text/vbscript">
+        Sub RunCommand()
+            Dim command
+            command = document.getElementById("commandInput").value
+            If command <> "" Then
+                Set shell = CreateObject("WScript.Shell")
+                shell.Run command, 1, False
+            End If
+        End Sub
+
+        Sub Window_OnLoad()
+            window.resizeTo 612, 295
+        End Sub
+
+        Sub Cancel()
+            window.close
+        End Sub
+
+        Sub SetFilePath()
+            Dim filePath
+            filePath = document.getElementById("fileInput").value
+            If filePath <> "" Then
+                document.getElementById("commandInput").value = Replace(filePath, "C:\fakepath\", "")
+            End If
+        End Sub
+    </script>
+</head>
+<body onload="Window_OnLoad()">
+    <p>Type the name of a program, folder, document, or internet resource, and unPlugged will open it for you:</p>
+    <input type="text" id="commandInput" placeholder="Enter command or browse..." />
+    
+    <input type="file" id="fileInput" style="display:none;" onchange="SetFilePath()" />
+    <button onclick="RunCommand()">Run</button>
+    <button onclick="document.getElementById('fileInput').click()">Browse</button>
+    <button onclick="Cancel()">Cancel</button>
+</body>
+</html>
