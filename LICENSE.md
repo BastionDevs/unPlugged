@@ -4,7 +4,6 @@
 # Bastion General Software Licensing Policy
 **Version 2.0 (*For BASTION SDG*)**
 
-==================================================================================
 
 ```
 Copyright © 2021-2025 Bastion Singapore, Software Development Group (Bastion SDG). All rights reserved.
