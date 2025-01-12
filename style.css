@@ -14,7 +14,7 @@ body {
     flex-flow: column;
     min-height: 100vh;
     margin: 0;
-    font: 120%/1.5 system-ui, sans-serif;
+    font: 120%/1.5 'JetBrains Mono', system-ui, sans-serif; /* Updated font */
 }
 
 a {
@@ -26,7 +26,7 @@ a:where(:visited) {
 }
 
 pre, code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: 'JetBrains Mono', Consolas, "Liberation Mono", Menlo, Courier, monospace; /* Updated font */
 }
 
 input, select, textarea {
