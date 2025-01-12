@@ -55,8 +55,8 @@ body > header h1::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
     margin-right: .1em;
     background: url(logo.svg) center / contain no-repeat;
     transition: .4s;
