@@ -1,9 +1,9 @@
 :root {
     /* Define the main color in HEX */
-    --main-color: #275317; /* Adjusted for #275317 */
+    --main-color: #275317; /* Main color */
     
     /* Define a complementary color */
-    --complementary-color: #4A6B1D; /* Complementary to green */
+    --complementary-color: #213e17; /* Complementary color */
     
     /* Gray color definition */
     --gray: #353535; /* Equivalent to hsl(200, 20%, 50%) */
@@ -18,11 +18,11 @@ body {
 }
 
 a {
-    color: #213e17; /* Equivalent to hsl(120, 50%, 40%) */
+    color: #4A6B1D; /* Equivalent to hsl(120, 50%, 40%) */
 }
 
 a:where(:visited) {
-    color: #213e17; /* Equivalent to hsl(120, 50%, 40%) */
+    color: #4A6B1D; /* Equivalent to hsl(120, 50%, 40%) */
 }
 
 pre, code {
@@ -66,12 +66,12 @@ body > header h1::before {
 /* Media queries and other styles remain unchanged */
 
 body > footer {
-    background: rgba(74, 144, 226, 0.2); /* Equivalent to hsl(200, 20%, 10%) */
+    background: rgba(74, 144, 226, 0.2); /* This can remain as is for transparency */
 }
 
 /* Update footer links */
 body > footer a {
-    color: inherit;
+    color: inherit; /* Inherits the default link color */
 }
 
 /* Update navigation styles */
@@ -79,7 +79,7 @@ nav {
     display: flex;
     padding-top: 0;
     padding-bottom: 0;
-    background: #4A6B1D; /* Equivalent to hsl(120, 50%, 65%) */
+    background: var(--complementary-color); /* Using complementary color */
 }
 
 nav > a {
