@@ -1,8 +1,9 @@
+<!doctype html>
 <html>
 <head>
-    <title>BSG unPlugged</title>
+    <title>BSG DASH</title> 
     <hta:application 
-        applicationname="Type the name of a program, folder, document, or internet resource, and unPlugged will open it for you"
+        applicationname="BSGDASH"
         border="thick"
         borderstyle="normal"
         caption="yes"
@@ -13,7 +14,7 @@
         singleinstance="yes" />
     <style>
         body { 
-            font-family: Tahoma; 
+            font-family: "Segoe UI"; 
             padding: 20px; 
         }
         input[type=text] { width: 300px; }
@@ -29,7 +30,27 @@
         End Sub
 
         Sub Window_OnLoad()
-            window.resizeTo 612, 295
+            window.resizeTo 540, 250
+            WindowTop  = (window.screen.availHeight - 250)
+            window.moveTo 0, WindowTop
+
+            strComputer = "."
+            Set objWMIService = GetObject("winmgmts:" _
+                & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+ 
+            Set colOperatingSystems = objWMIService.ExecQuery _
+                ("Select * from Win32_OperatingSystem")
+ 
+            For Each objOperatingSystem in colOperatingSystems
+                OSCaption = objOperatingSystem.Caption
+            Next
+
+            If InStr(1, OSCaption, "10") Then 
+                document.getElementById("runIcon").src = "https://unplugged.bastionsg.rf.gd/bypsrc/dashsrc/Run_2015.png"
+            Else
+                document.getElementById("runIcon").src = "https://unplugged.bastionsg.rf.gd/bypsrc/dashsrc/Run_Windows_2021.png"
+            End If
+            	
         End Sub
 
         Sub Cancel()
@@ -43,15 +64,25 @@
                 document.getElementById("commandInput").value = Replace(filePath, "C:\fakepath\", "")
             End If
         End Sub
+
+        Sub Document_OnKeyUp()
+            intKeyCode = Window.Event.Keycode
+            If intKeyCode = 27 Then Window.Close
+        End Sub
     </script>
 </head>
-<body onload="Window_OnLoad()">
-    <p>Type the name of a program, folder, document, or internet resource, and unPlugged will open it for you:</p>
-    <input type="text" id="commandInput" placeholder="Enter command or browse..." />
+<body onload="Window_OnLoad()" scroll="no">
+    <p><img id="runIcon" src="" style="width:15%; vertical-align: top; display: inline-block;" />
+        <span style="display: inline-block; width: 75%;">Type the name of a program, folder, document, or Internet resource, and DASH will open it for you:</span>
+    </p>
+    <p>Open: <input type="text" id="commandInput" placeholder="Enter command or browse..." size="60" /></p>
+    
+
+    <br>
     
     <input type="file" id="fileInput" style="display:none;" onchange="SetFilePath()" />
     <button onclick="RunCommand()">Run</button>
-    <button onclick="document.getElementById('fileInput').click()">Browse</button>
     <button onclick="Cancel()">Cancel</button>
+    <button onclick="document.getElementById('fileInput').click()">Browse</button>
 </body>
 </html>
