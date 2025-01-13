@@ -1,7 +1,7 @@
 # unPlugged
 [![Bastion GSLP License](https://img.shields.io/badge/Bastion-GSLP%20v2.0-blue)](LICENSE.md)
 ![Website](https://img.shields.io/website?url=http%3A%2F%2Funplugged.bastionsg.rf.gd%2F)
-![Discord](https://img.shields.io/discord/1324722556472918016)
+[![Discord](https://img.shields.io/discord/1324722556472918016)](https://discord.gg/fNZEGTNyYR)
 
 
 unPlugged is an innovative server designed to assist students in Singapore by providing essential technology support and resources. Our mission is to enhance the learning experience through seamless access to information, tools, and community engagement.
