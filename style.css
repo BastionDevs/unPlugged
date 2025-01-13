@@ -118,6 +118,9 @@ main {
     flex: 1;
 }
 
+header, nav, footer {
+    overflow: hidden;
+}
 
 html, body {
     height: 100%; margin: 0 0 0 0; padding: 0 0 0 0; 
