@@ -112,18 +112,6 @@ footer {
     right: 0;
 }
 
-main {
-    overflow: auto;
-    scroll-behavior: smooth;
-    flex: 1;
-    display: flex;
-    display: -webkit-flex;
-}
-
-footer {
-    overflow: hidden;
-}
-
 html, body {
     height: 100%; margin: 0 0 0 0; padding: 0 0 0 0; 
 }
