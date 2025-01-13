@@ -116,6 +116,8 @@ main {
     overflow: auto;
     scroll-behavior: smooth;
     flex: 1;
+    display: flex;
+    display: -webkit-flex;
 }
 
 header, nav, footer {
