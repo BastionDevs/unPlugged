@@ -34,10 +34,10 @@ Or join our discord server and open a suggestion ticket!
  
  ## License
 This project is licensed under the Bastion General Software Licensing Policy.  
-See the [LICENSE file](LICENSE.md) for details.
+See the [LICENSE file](https://unplugged.bastionsg.rf.gd/licensepage.html) for details.
   
 ### Contact
-Join the official unPlugged Discord server for support and updates: [unPlugged Discord](https://discord.gg/vnpkGajgJj)
+Join the official unPlugged Discord server for support and updates: [unPlugged Discord](https://discord.gg/fNZEGTNyYR)
 
 ### Disclaimer
 unPlugged is not responsible for any damaged caused while using our solutions.  
