@@ -4,15 +4,15 @@ We offer a comprehensive range of jailbreak services tailored for various platfo
 
 ## 🪟 Windows Services
 
-- **❌ BlocksiByp:** Gain access to filtered websites and web applications that blocked.
+- **BlocksiByp:** Gain access to filtered websites and web applications that blocked.
 
-- **📂 TeamsByp:** Overcome limitations imposed via Microsoft Teams, allowing for unrestricted communication and collaboration.
+- **TeamsByp:** Overcome limitations imposed via Microsoft Teams, allowing for unrestricted communication and collaboration.
 
-- **🔓 Enable Administrator Bypass:** Elevate your user privileges to gain administrative access, enabling the installation of software and modifications to system settings.
+- **Enable Administrator Bypass:** Elevate your user privileges to gain administrative access, enabling the installation of software and modifications to system settings.
 
-- **📦 Winget Bypass:** Install and manage applications using WinGet without encountering restrictions related to corporate policies or agreements.
+- **Winget Bypass:** Install and manage applications using WinGet without encountering restrictions related to corporate policies or agreements.
 
-- **💽 Boot from USB:** Utilize USB drives to boot your device, allowing for alternative operating systems or recovery environments.
+- **Boot from USB:** Utilize USB drives to boot your device, allowing for alternative operating systems or recovery environments.
 
 ## 💻 Chromebook Services
 
@@ -24,7 +24,7 @@ We provide specialized services for Chromebooks, focusing on enhancing user cont
 
 - **Sh1mmer:** An innovative exploit that enables users to unenroll enterprise-managed Chromebooks from administrative control. This method allows users to regain full control over their devices, enabling the installation of apps and removal of restrictions imposed by their organization.
 
-## iPad Services
+## 📱 iPad Services
 
 For iPads, we offer:
 
