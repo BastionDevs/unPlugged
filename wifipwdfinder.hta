@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wi-Fi Profile Viewer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 875px;
+            height: 827px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        label {
+            font-weight: bold;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        pre {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-x: auto;
+        }
+    </style>
+    <script type="text/vbscript">
+        Sub GetWlanProfile()
+            Dim ssid, command, shell, output, keyContent
+            ssid = document.getElementById("ssidInput").value
+            
+            If ssid = "" Then
+                MsgBox "Please enter an SSID."
+                Exit Sub
+            End If
+            
+            Set shell = CreateObject("WScript.Shell")
+            command = "netsh wlan show profile name=""" & ssid & """ key=clear"
+            
+            Dim exec
+            Set exec = shell.Exec(command)
+            
+            output = ""
+            Do While Not exec.StdOut.AtEndOfStream
+                output = output & exec.StdOut.ReadLine() & vbCrLf
+            Loop
+            
+            keyContent = ExtractKeyContent(output)
+            
+            If keyContent <> "" Then
+                document.getElementById("result").innerText = "Key Content: " & keyContent
+            Else
+                document.getElementById("result").innerText = "No key found or SSID does not exist."
+            End If
+        End Sub
+
+        Sub GetAvailableProfiles()
+            Dim command, shell, exec, output
+            Set shell = CreateObject("WScript.Shell")
+            command = "netsh wlan show profiles"
+            
+            Set exec = shell.Exec(command)
+            
+            output = ""
+            Do While Not exec.StdOut.AtEndOfStream
+                output = output & exec.StdOut.ReadLine() & vbCrLf
+            Loop
+            
+            document.getElementById("availableProfiles").innerText = output
+        End Sub
+
+        Function ExtractKeyContent(output)
+            Dim regex, matches
+            Set regex = New RegExp
+            regex.Pattern = "Key Content\s*:\s*(.+)"
+            regex.IgnoreCase = True
+            regex.Global = True
+            
+            Set matches = regex.Execute(output)
+            
+            If matches.Count > 0 Then
+                ExtractKeyContent = Trim(matches(0).SubMatches(0))
+            Else
+                ExtractKeyContent = ""
+            End If
+        End Function
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wi-Fi Profile Viewer</h1>
+
+        <label for="ssidInput">Enter SSID:</label>
+        <input type="text" id="ssidInput" />
+        <button onclick="GetWlanProfile()">Get Profile</button>
+        <button onclick="GetAvailableProfiles()">Show Available Profiles</button>
+        
+        <h2>Profile Details:</h2>
+        <pre id="result"></pre>
+
+        <h2>Available Profiles:</h2>
+        <pre id="availableProfiles"></pre>
+    </div>
+</body>
+</html>
