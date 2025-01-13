@@ -120,7 +120,7 @@ main {
     display: -webkit-flex;
 }
 
-header, nav, footer {
+footer {
     overflow: hidden;
 }
 
