@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLB8LGRYMM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LLB8LGRYMM');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+    </style>
+
+    <title>{% block title %}unPlugged{% endblock %}</title>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://live.prismjs.com/prism-live.css">
+    <script src="https://live.prismjs.com/src/prism-live.js?load=html,markdown"></script>
+    <script src="./prism.js"></script>
+    <link rel="stylesheet" href="./prism.css">
+
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <h1>unPlugged</h1>
+        <md-block>
+            Supercharge Your PLD Today!
+        </md-block>
+    </header>
+    <nav>
+        <a href="./">Homepage</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="materials.html">Materials</a>
+        <a href="https://github.com/BastionDevs/unPlugged">GitHub</a>
+        <a href="https://discord.gg/fNZEGTNyYR">Discord</a>
+        <a href="licensepage.html">License</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <md-span>
+            Copyright © 2025 Bastion Singapore, Software Development Group (Bastion SDG). All rights reserved.
+        </md-span>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>
+
+<!-- for when we finally add jekyll -->
