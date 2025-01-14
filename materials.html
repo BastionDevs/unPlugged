@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLB8LGRYMM"></script>
     <script>
@@ -26,6 +25,7 @@
     <script src="https://live.prismjs.com/src/prism-live.js?load=html,markdown"></script>
     <script src="./prism.js"></script>
     <link rel="stylesheet" href="./prism.css">
+
 </head>
 
 <body>
@@ -44,15 +44,16 @@
         <a href="licensepage.html">License</a>
     </nav>
     <main>
-        <md-block src="materials.md" hlinks="#">
-            [Documentation on GitHub](https://github.com/BastionDevs/unPlugged/blob/main/materials.md)
-        </md-block>
+        <div id="materials-list"></div>
     </main>
     <footer>
         <md-span>
             Copyright © 2025 Bastion Singapore, Software Development Group (Bastion SDG). All rights reserved.
         </md-span>
     </footer>
+
+    <script src="materials.js"></script>
+
 </body>
 
 </html>
