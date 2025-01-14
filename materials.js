@@ -1,15 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
     const materialsList = document.getElementById('materials-list');
     
+    // Initial fetch for the main repository contents
     fetch('https://api.github.com/repos/BastionDevs/unPlugged/contents')
         .then(response => response.json())
         .then(data => {
             const container = document.createElement('div');
             container.className = 'file-container';
+            
+            // Define the allowed folder names
+            const allowedFolders = ['bypsrc', 'pldsrc'];
+            
             data.forEach(item => {
-                const box = createFileBox(item);
-                container.appendChild(box);
+                // Check if item is a folder with an allowed name
+                if (item.type === 'dir' && allowedFolders.includes(item.name)) {
+                    const box = createFileBox(item);
+                    container.appendChild(box);
+                }
             });
+            
             materialsList.innerHTML = '';
             materialsList.appendChild(container);
         })
@@ -29,7 +38,6 @@ function createFileBox(item) {
     const name = document.createElement('div');
     name.className = 'file-name';
     
- 
     const nameWithoutExtension = item.name.replace(/\.[^/.]+$/, "");
     name.textContent = nameWithoutExtension;
     
@@ -40,13 +48,12 @@ function createFileBox(item) {
         if (item.type === 'file') {
             loadFile(item.download_url);
         } else if (item.type === 'dir') {
-            loadDirectory(item.url);
+            loadDirectory(item.url);  // Load directory contents
         }
     };
     
     return box;
 }
-
 
 function loadFile(url) {
     fetch(url)
@@ -70,10 +77,12 @@ function loadDirectory(url) {
         .then(data => {
             const container = document.createElement('div');
             container.className = 'file-container';
+            
             data.forEach(item => {
-                const box = createFileBox(item);
+                const box = createFileBox(item);  // Create boxes for each item
                 container.appendChild(box);
             });
+            
             const materialsList = document.getElementById('materials-list');
             materialsList.innerHTML = '';
             materialsList.appendChild(container);
